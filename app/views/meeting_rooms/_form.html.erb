@@ -1,0 +1,141 @@
+<%= form_for(@meeting_room) do |f| %>
+  <% if @meeting_room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@meeting_room.errors.count, "error") %> prohibited this meeting_room from being saved:</h2>
+
+      <ul>
+      <% @meeting_room.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :venueId %><br />
+    <%= f.text_field :venueId %>
+  </div>
+  <div class="field">
+    <%= f.label :roomName %><br />
+    <%= f.text_field :roomName %>
+  </div>
+  <div class="field">
+    <%= f.label :floor %><br />
+    <%= f.text_field :floor %>
+  </div>
+  <div class="field">
+    <%= f.label :suite %><br />
+    <%= f.text_field :suite %>
+  </div>
+  <div class="field">
+    <%= f.label :liftToFloor %><br />
+    <%= f.text_field :liftToFloor %>
+  </div>
+  <div class="field">
+    <%= f.label :theatre %><br />
+    <%= f.text_field :theatre %>
+  </div>
+  <div class="field">
+    <%= f.label :classRoom %><br />
+    <%= f.text_field :classRoom %>
+  </div>
+  <div class="field">
+    <%= f.label :boardRoom %><br />
+    <%= f.text_field :boardRoom %>
+  </div>
+  <div class="field">
+    <%= f.label :uShape %><br />
+    <%= f.text_field :uShape %>
+  </div>
+  <div class="field">
+    <%= f.label :cabaret %><br />
+    <%= f.text_field :cabaret %>
+  </div>
+  <div class="field">
+    <%= f.label :lunchDinner %><br />
+    <%= f.text_field :lunchDinner %>
+  </div>
+  <div class="field">
+    <%= f.label :dinnerDance %><br />
+    <%= f.text_field :dinnerDance %>
+  </div>
+  <div class="field">
+    <%= f.label :reception %><br />
+    <%= f.text_field :reception %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br />
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :heightMax %><br />
+    <%= f.text_field :heightMax %>
+  </div>
+  <div class="field">
+    <%= f.label :heightMin %><br />
+    <%= f.text_field :heightMin %>
+  </div>
+  <div class="field">
+    <%= f.label :doorHeight %><br />
+    <%= f.text_field :doorHeight %>
+  </div>
+  <div class="field">
+    <%= f.label :tungsten %><br />
+    <%= f.text_field :tungsten %>
+  </div>
+  <div class="field">
+    <%= f.label :fluorescent %><br />
+    <%= f.text_field :fluorescent %>
+  </div>
+  <div class="field">
+    <%= f.label :halogen %><br />
+    <%= f.text_field :halogen %>
+  </div>
+  <div class="field">
+    <%= f.label :dimmers %><br />
+    <%= f.text_field :dimmers %>
+  </div>
+  <div class="field">
+    <%= f.label :controlsInRoom %><br />
+    <%= f.text_field :controlsInRoom %>
+  </div>
+  <div class="field">
+    <%= f.label :blackout %><br />
+    <%= f.text_field :blackout %>
+  </div>
+  <div class="field">
+    <%= f.label :windows %><br />
+    <%= f.text_field :windows %>
+  </div>
+  <div class="field">
+    <%= f.label :soundSystemFitted %><br />
+    <%= f.text_field :soundSystemFitted %>
+  </div>
+  <div class="field">
+    <%= f.label :airConditioning %><br />
+    <%= f.text_field :airConditioning %>
+  </div>
+  <div class="field">
+    <%= f.label :phase %><br />
+    <%= f.text_field :phase %>
+  </div>
+  <div class="field">
+    <%= f.label :sockets %><br />
+    <%= f.text_field :sockets %>
+  </div>
+  <div class="field">
+    <%= f.label :telephonePoints %><br />
+    <%= f.text_field :telephonePoints %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

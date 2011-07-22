@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  venueName: 
+  address: MyText
+  telephone: 
+  fax: 
+  email: 
+  rating: 
+  delegateRates: 
+  roomHireRate: 
+  meetingCapacity: 1
+  cateringCapacity: 1
+  bedrooms: 1
+
+two:
+  venueName: 
+  address: MyText
+  telephone: 
+  fax: 
+  email: 
+  rating: 
+  delegateRates: 
+  roomHireRate: 
+  meetingCapacity: 1
+  cateringCapacity: 1
+  bedrooms: 1

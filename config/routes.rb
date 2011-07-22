@@ -1,6 +1,11 @@
 VenuFinder::Application.routes.draw do
+  resources :meeting_rooms
+
+  resources :venues
+
   resources :users
 
+  #match 'venue/:id/meeting_rooms' => 'users#new', :as => :new_meeting_room
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

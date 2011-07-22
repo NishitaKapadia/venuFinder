@@ -1,0 +1,67 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  venueId: 1
+  roomName: MyString
+  floor: MyString
+  suite: MyString
+  liftToFloor: MyString
+  theatre: 1
+  classRoom: 1
+  boardRoom: 1
+  uShape: 1
+  cabaret: 1
+  lunchDinner: 1
+  dinnerDance: 1
+  reception: 1
+  length: MyString
+  width: MyString
+  area: MyString
+  heightMax: MyString
+  heightMin: MyString
+  doorHeight: MyString
+  tungsten: MyString
+  fluorescent: MyString
+  halogen: MyString
+  dimmers: MyString
+  controlsInRoom: MyString
+  blackout: MyString
+  windows: MyString
+  soundSystemFitted: MyString
+  airConditioning: MyString
+  phase: MyString
+  sockets: 1
+  telephonePoints: 1
+
+two:
+  venueId: 1
+  roomName: MyString
+  floor: MyString
+  suite: MyString
+  liftToFloor: MyString
+  theatre: 1
+  classRoom: 1
+  boardRoom: 1
+  uShape: 1
+  cabaret: 1
+  lunchDinner: 1
+  dinnerDance: 1
+  reception: 1
+  length: MyString
+  width: MyString
+  area: MyString
+  heightMax: MyString
+  heightMin: MyString
+  doorHeight: MyString
+  tungsten: MyString
+  fluorescent: MyString
+  halogen: MyString
+  dimmers: MyString
+  controlsInRoom: MyString
+  blackout: MyString
+  windows: MyString
+  soundSystemFitted: MyString
+  airConditioning: MyString
+  phase: MyString
+  sockets: 1
+  telephonePoints: 1

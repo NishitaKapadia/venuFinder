@@ -1,0 +1,83 @@
+<h1>Listing meeting_rooms</h1>
+
+<table>
+  <tr>
+    <th>Venueid</th>
+    <th>Roomname</th>
+    <th>Floor</th>
+    <th>Suite</th>
+    <th>Lifttofloor</th>
+    <th>Theatre</th>
+    <th>Classroom</th>
+    <th>Boardroom</th>
+    <th>Ushape</th>
+    <th>Cabaret</th>
+    <th>Lunchdinner</th>
+    <th>Dinnerdance</th>
+    <th>Reception</th>
+    <th>Length</th>
+    <th>Width</th>
+    <th>Area</th>
+    <th>Heightmax</th>
+    <th>Heightmin</th>
+    <th>Doorheight</th>
+    <th>Tungsten</th>
+    <th>Fluorescent</th>
+    <th>Halogen</th>
+    <th>Dimmers</th>
+    <th>Controlsinroom</th>
+    <th>Blackout</th>
+    <th>Windows</th>
+    <th>Soundsystemfitted</th>
+    <th>Airconditioning</th>
+    <th>Phase</th>
+    <th>Sockets</th>
+    <th>Telephonepoints</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @meeting_rooms.each do |meeting_room| %>
+  <tr>
+    <td><%= meeting_room.venueId %></td>
+    <td><%= meeting_room.roomName %></td>
+    <td><%= meeting_room.floor %></td>
+    <td><%= meeting_room.suite %></td>
+    <td><%= meeting_room.liftToFloor %></td>
+    <td><%= meeting_room.theatre %></td>
+    <td><%= meeting_room.classRoom %></td>
+    <td><%= meeting_room.boardRoom %></td>
+    <td><%= meeting_room.uShape %></td>
+    <td><%= meeting_room.cabaret %></td>
+    <td><%= meeting_room.lunchDinner %></td>
+    <td><%= meeting_room.dinnerDance %></td>
+    <td><%= meeting_room.reception %></td>
+    <td><%= meeting_room.length %></td>
+    <td><%= meeting_room.width %></td>
+    <td><%= meeting_room.area %></td>
+    <td><%= meeting_room.heightMax %></td>
+    <td><%= meeting_room.heightMin %></td>
+    <td><%= meeting_room.doorHeight %></td>
+    <td><%= meeting_room.tungsten %></td>
+    <td><%= meeting_room.fluorescent %></td>
+    <td><%= meeting_room.halogen %></td>
+    <td><%= meeting_room.dimmers %></td>
+    <td><%= meeting_room.controlsInRoom %></td>
+    <td><%= meeting_room.blackout %></td>
+    <td><%= meeting_room.windows %></td>
+    <td><%= meeting_room.soundSystemFitted %></td>
+    <td><%= meeting_room.airConditioning %></td>
+    <td><%= meeting_room.phase %></td>
+    <td><%= meeting_room.sockets %></td>
+    <td><%= meeting_room.telephonePoints %></td>
+    <td><%= link_to 'Show', meeting_room %></td>
+    <td><%= link_to 'Edit', edit_meeting_room_path(meeting_room) %></td>
+    <td><%= link_to 'Destroy', meeting_room, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Meeting room', new_meeting_room_path %>
